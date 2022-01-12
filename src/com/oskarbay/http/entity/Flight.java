@@ -10,10 +10,10 @@ public class Flight {
     private String depatureAirportCode;
     private LocalDateTime arrivalDate;
     private String arrivalAirportCode;
-    private Long arcraftId;
+    private Integer arcraftId;
     private FlightStatus status;
 
-    public Flight(Long id, String flightNo, LocalDateTime depatureDate, String depatureAirportCode, LocalDateTime arrivalDate, String arrivalAirportCode, Long arcraftId, FlightStatus status) {
+    public Flight(Long id, String flightNo, LocalDateTime depatureDate, String depatureAirportCode, LocalDateTime arrivalDate, String arrivalAirportCode, Integer arcraftId, FlightStatus status) {
         this.id = id;
         this.flightNo = flightNo;
         this.depatureDate = depatureDate;
@@ -72,11 +72,11 @@ public class Flight {
         this.arrivalAirportCode = arrivalAirportCode;
     }
 
-    public Long getArcraftId() {
+    public Integer getArcraftId() {
         return arcraftId;
     }
 
-    public void setArcraftId(Long arcraftId) {
+    public void setArcraftId(Integer arcraftId) {
         this.arcraftId = arcraftId;
     }
 

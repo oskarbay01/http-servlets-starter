@@ -10,7 +10,7 @@ import static java.util.stream.Collectors.toList;
 
 public class FlightService {
 
-    private final FlightService INSTANCE = new FlightService();
+    private static final FlightService INSTANCE = new FlightService();
 
     private final FlightDao flightDao = FlightDao.getInstance();
 
@@ -28,7 +28,7 @@ public class FlightService {
     private FlightService() {
     }
 
-    public FlightService getInstance() {
+    public static FlightService getInstance() {
         return INSTANCE;
     }
 
