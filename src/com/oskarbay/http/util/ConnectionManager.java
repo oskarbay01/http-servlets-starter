@@ -8,7 +8,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 @UtilityClass
-public  class ConnectionManager {
+public class ConnectionManager {
     public static final String URL_KEY = "db.url";
     public static final String USER_KEY = "db.user";
     public static final String PASSWORD_KEY = "db.password";
